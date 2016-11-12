@@ -1,42 +1,41 @@
 @font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather-Regular.ttf');
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather-Italic.ttf');
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather-Bold.ttf');
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather-BoldIt.ttf');
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya-BoldItalic.ttf');
   font-weight: bold;
   font-style: italic;
 }
 
-
 @font-face {
-  font-family: 'WorkSans';
-  src: url('../fonts/WorkSans-Regular.ttf');
+  font-family: 'RobotoSlab';
+  src: url('../fonts/RobotoSlab-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'WorkSans';
-  src: url('../fonts/WorkSans-Bold.ttf');
+  font-family: 'RobotoSlab';
+  src: url('../fonts/RobotoSlab-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
