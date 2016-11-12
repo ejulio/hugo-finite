@@ -9,7 +9,7 @@
 
 /* Basic colors and fonts.  */
 body {
-    background-color: #faf8f8;
+    background-color: #fbfbfb;
     color: #101730;
     font-family: 'Alegreya', serif;
 }
@@ -32,15 +32,15 @@ body {
 .nav-bar button,
 .nav-bar a,
 .nav-bar ul {
-    background-color: #101730;
-    color: #faf8f8;
+    background-color: #a80101;
+    color: #dbdbdb;
     border: none;
 }
 
 .nav-bar button:hover,
 .nav-bar a:hover,
 .nav-bar a:focus {
-    color: #2199e8;
+    color: #fbfbfb;
     border: none;
 }
 
@@ -51,11 +51,15 @@ body {
     letter-spacing: 0.05em;
 }
 
+.site-title a {
+    color: #fbfbfb;
+}
+
 
 /* Last footer.  */
 .endofpage { 
     /* background-image: url("/img/wave.png"); */
-    background-color: #101730;
+    background-color: #a80101;
     height: 50px;
     background-repeat: repeat-x;
     margin-top: 3ex;
@@ -68,13 +72,13 @@ main {
 }
 
 a {
-    color: #101730;
+    color: #a80101;
 }
 
 a:hover,
 a:focus {
-    border-bottom: 1px solid #101730;
-    color: #101730;
+    border-bottom: 1px dotted #2199e8;
+    color: #a80101;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -219,8 +223,7 @@ ul.taxonomy-terms {
 }
 
 .button.hollow.pub-link:hover {
-    border-color: #1299e8;
-    color: #2199e8;
+    color: #a80101;
     transition: none;
 }
 
@@ -233,8 +236,8 @@ ul.taxonomy-terms {
 }
 
 .button.hollow.primary:hover {
-    color: #2199e8;
-    border-color: #2199e8;
+    color: #a80101;
+    border-color: #a80101;
     transition: none;
 }
 
@@ -360,4 +363,15 @@ ul.taxonomy-terms {
 .post-content {
     font-size: 1rem;
     line-height: 1.75rem;
+}
+
+.read-more a {
+    color: #101730;
+    border: none;
+}
+
+.read-more a:hover,
+.read-more a:focus {
+    color: #a80101;
+    border-bottom: 1px dotted #2199e8;    
 }
