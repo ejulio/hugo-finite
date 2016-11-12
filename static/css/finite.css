@@ -142,8 +142,23 @@ pre {
     text-transform: capitalize;
 }
 
-.full-figure {
-    margin: 0;
+.justified {
+    text-align: justify;
+}
+
+.round-figure {
+    margin: 0 25px 15px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.round-figure img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /* Default footer.  */
