@@ -1,3 +1,13 @@
-<i class="fa-li fa {{ partial "pub-icon" . }}" style="padding-top:3px;"></i>{{ .Title | safeHTML }}
-<br />
-<span><a class="button hollow pub-link" href="{{ .Permalink }}">Abstract</a> {{ partial "pub-links" . }}</span>
+<i class="fa-li fa {{ partial "pub-icon" . }}" style="padding-top:3px;"></i>
+<span class="pub-title">
+	<a href="{{ .Permalink }}">{{ .Title | safeHTML }}</a> in {{$.Params.publication_short}}
+</span>
+
+<p class="pub-abstract-short justified">
+	<strong>Short Abstract:</strong> {{$.Params.abstract_short}}
+	<a href="{{ .Permalink }}">Continue reading</a>
+</p>
+
+<span>
+	{{ partial "pub-links" . }}
+</span>

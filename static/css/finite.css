@@ -252,6 +252,16 @@ ul.taxonomy-terms {
     padding-top: 6px;
 }
 
+.pub-title {
+    font-style: italic;
+}
+
+.pub-abstract-short {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-style: italic;
+}
+
 .pub-banner {
     max-width: 100%;
     height: auto;
