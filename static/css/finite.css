@@ -80,7 +80,6 @@ a:focus {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'RobotoSlab', sans;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 @media screen and (min-width: 40em) {
@@ -211,9 +210,9 @@ ul.taxonomy-terms {
 /* Publication links on front page and on publication pages. */
 
 .button.hollow.pub-link {
-    font-family: 'WorkSans', sans;
+    font-family: 'RobotoSlab', sans;
     color: #101730;
-    border: 1px dotted #101730;
+    border: none;
     transition: none;
     padding: 0.35em 0.4em;
     margin: 0 0 0.5rem 0;
@@ -226,7 +225,7 @@ ul.taxonomy-terms {
 }
 
 .button.hollow.primary {
-    font-family: 'WorkSans', sans;
+    font-family: 'Alegreya', sans;
     text-transform: uppercase;  
     border: 1px solid #101730;
     color: #101730;
