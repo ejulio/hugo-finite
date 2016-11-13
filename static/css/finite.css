@@ -196,14 +196,12 @@ ul.taxonomy-terms {
 }
 
 .pagination a {
-    border: none;
-    /* Mh. Is this correct? */
-    padding-bottom: 1px;
+    padding-bottom: 0;
 }
 
 .pagination a:hover {
     background-color: transparent;
-    border-bottom: 1px dotted #2199e8;
+    border-bottom: 1px dotted #260e0e;
     /* Mh. Is this correct? */
     padding-bottom: 0px;
 }
