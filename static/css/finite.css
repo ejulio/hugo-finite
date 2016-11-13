@@ -10,7 +10,7 @@
 /* Basic colors and fonts.  */
 body {
     background-color: #fbfbfb;
-    color: #101730;
+    color: #260e0e;
     font-family: 'Alegreya', serif;
 }
 
@@ -58,7 +58,6 @@ body {
 
 /* Last footer.  */
 .endofpage { 
-    /* background-image: url("/img/wave.png"); */
     background-color: #a80101;
     height: 50px;
     background-repeat: repeat-x;
@@ -72,12 +71,13 @@ main {
 }
 
 a {
-    color: #a80101;
+    border-bottom: 1px dotted #260e0e;
+    color: #260e0e;
 }
 
 a:hover,
 a:focus {
-    border-bottom: 1px dotted #2199e8;
+    border-bottom: 1px dotted #260e0e;
     color: #a80101;
 }
 
@@ -96,8 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Code highlighting: Inline code.  */
-code
-{
+code {
     /* For non-JS users we repeat color here.  */
     color: #101730;
     background-color: #ece8e8;
@@ -351,37 +350,23 @@ ul.taxonomy-terms {
  **************************************************/
 
 .post-metadata {
-    color: #606090;
+    color: #a83e3e;
     margin-bottom: 1rem;
     font-size: small;
 }
 
-.post-date {
+.post-date,
+.post-tags,
+.post-categories {
     font-style: italic;
     margin-right: 1em;
 }
 
-.post-metadata a {
-    color: #606090;
-    border: none;
-}
-
 .post-metadata a:hover {
-    color: #2199e8;
+    color: #a83e3e;
 }
 
 .post-content {
     font-size: 1rem;
     line-height: 1.75rem;
-}
-
-.read-more a {
-    color: #101730;
-    border: none;
-}
-
-.read-more a:hover,
-.read-more a:focus {
-    color: #a80101;
-    border-bottom: 1px dotted #2199e8;    
 }

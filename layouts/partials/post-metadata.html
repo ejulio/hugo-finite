@@ -1,16 +1,34 @@
 <div class="post-metadata">
   <span class="post-date">
-    <time datetime="{{ $.Date }}" itemprop="datePublished">{{ $.Date.Format (default "2 January 2006" (index $.Site.Params "date_format")) }}</time>
+    <time datetime="{{ $.Date }}" itemprop="datePublished">
+      {{ $.Date.Format (default "2 January 2006" (index $.Site.Params "date_format")) }}
+    </time>
   </span>
-  {{ if isset $.Params "tags" }}
-  {{ $tagsLen := len $.Params.tags }}
-  {{ if gt $tagsLen 0 }}
-  <span class="post-tags">
-    <span class="nowrap"><i class="fa fa-tags"></i>
-    {{ range $k, $v := $.Params.tags }}
-    <a class="post-tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>{{ if lt $k (sub $tagsLen 1) }},{{ if eq 0 $k }}</span>{{ end}} {{ end }}
+  {{ if isset $.Params "categories" }}
+    {{ $tagsLen := len $.Params.categories }}
+    {{ if gt $tagsLen 0 }}
+      <span class="post-categories">
+        <span class="nowrap">
+          {{ range $k, $v := $.Params.categories }}
+            <a href="{{ $.Site.BaseURL }}categories/{{ . | urlize | lower }}">{{ . }}</a>
+            {{ if lt $k (sub $tagsLen 1) }},{{end}}
+          {{ end }}
+        </span>
+      </span>
     {{ end }}
-  </span>
   {{ end }}
+
+  {{ if isset $.Params "tags" }}
+    {{ $tagsLen := len $.Params.tags }}
+    {{ if gt $tagsLen 0 }}
+      <span class="post-tags">
+        <span class="nowrap"><i class="fa fa-tags"></i>
+          {{ range $k, $v := $.Params.tags }}
+            <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>
+            {{ if lt $k (sub $tagsLen 1) }},{{end}}
+          {{ end }}
+        </span>
+      </span>
+    {{ end }}
   {{ end }}
 </div>

@@ -1,4 +1,7 @@
-<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+<h4 class="post-title">
+	<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</h4>
 {{ partial "post-metadata" . }}
-<p class="justified post-content">{{ .Summary }}</p>
-<p class="text-right read-more"><a href="{{ .RelPermalink }}">Read More…</a></p>
+<p class="justified post-content">{{ .Summary }}... 
+	<a href="{{ .RelPermalink }}">[Continue reading]</a>
+</p>
