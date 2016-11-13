@@ -243,6 +243,10 @@ ul.taxonomy-terms {
  *  Publications
  **************************************************/
 
+.pub h1 {
+    font-weight: bold;
+}
+
 .pub-icon {
     color: #101730;
     font-size: 0.81em;
@@ -251,6 +255,11 @@ ul.taxonomy-terms {
 
 .pub-title {
     font-style: italic;
+}
+
+.pub-abstract {
+    font-style: italic;
+    text-align: justify;
 }
 
 .pub-abstract-short {
@@ -272,7 +281,7 @@ ul.taxonomy-terms {
 
 .pub .pub-info {
     padding-left: 0.5rem;
-    border-left: 3px solid #2199e8;
+    border-left: 3px solid #a80101;
 }
 
 .pub .pub-authors {
