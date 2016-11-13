@@ -1,7 +1,4 @@
 {{ define "main" }}
-<div class="row">
-  {{ partial "pub-aside" . }}
-</div>
 <div>
     {{ range (where .Data.Pages "Params.publication" "!=" "").GroupByDate "2006" "desc" }}
     <div class="row">

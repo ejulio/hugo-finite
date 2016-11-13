@@ -168,6 +168,11 @@ pre {
     border-color: #101730;
 }
 
+.about-text {
+    text-align: justify;
+    font-style: italic;
+}
+
 /* Taxonomy terms page.  */
 ul.taxonomy-terms {
     margin-left: 0;
