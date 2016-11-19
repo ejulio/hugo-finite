@@ -13,7 +13,6 @@
         </div>
         <div class="column small-12 medium-4">
             {{ if isset .Site.Params "education" }}
-                <h1>Education</h1>
                 <ul class="ul-edu fa-ul">
                     {{ range $.Site.Params.education }}
                         <li><i class="fa-li fa fa-graduation-cap"></i>
@@ -24,14 +23,13 @@
             {{ end }}
         </div>
         <div class="column small-12 medium-4">
-            <h1 id="contact">Contact</h1>
             <ul class="fa-ul">
                 {{ range $.Site.Params.social }}
                     <li>
                         <i class="fa-li {{ .icon_pack }} {{ .icon_pack}}-{{ .icon }}" 
                             style="padding-top:3px;"></i>
                             <a href="{{ .link }}">{{ .text }}</a>
-                            {{ if .site}} on {{ .site }}{{ end }}
+                            {{ if .site}} no {{ .site }}{{ end }}
                     </li>
                 {{ end }}
             </ul>

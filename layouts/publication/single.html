@@ -25,12 +25,12 @@
       <div class="pub-info">
       	{{ if .Params.publication }}
         	<div class="row">
-        	  <div class="column small-2 medium-1 pub-row-heading">Cite</div>
+        	  <div class="column small-2 medium-1 pub-row-heading">In</div>
         	  <div class="column small-10 medium-11">{{ .Params.publication | markdownify }}</div>
         	</div>
       	{{ end }}
       	<div class="row">
-      	  <div class="column small-2 medium-1 pub-row-heading">Date</div>
+      	  <div class="column small-2 medium-1 pub-row-heading">Data</div>
       	  <div class="column small-10 medium-11" itemprop="datePublished">{{ .Date.Format "January, 2006" }}</div>
       	</div>
       	<div class="row">
