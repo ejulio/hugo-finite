@@ -3,15 +3,15 @@
     <ul class="pagination" role="navigation" aria-label="Pagination">
       {{ if .Paginator.HasNext }}
         <li class="arrow" aria-disabled="true">
-          <a href="{{ .Paginator.Next.URL }}">&laquo; <em>Older<span class="show-for-sr"> blog entries</span></em></a>
+          <a href="{{ .Paginator.Next.URL }}">&laquo; Posts <em>antigos<span class="show-for-sr"></span></em></a>
         </li>
       {{ end }}
       <li>
-        <span>Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span>
+        <span>Página {{.Paginator.PageNumber}} de {{.Paginator.TotalPages}}</span>
       </li>      
       {{ if .Paginator.HasPrev }}
         <li class="arrow" aria-disabled="true">
-          <a href="{{ .Paginator.Prev.URL }}"><em>Newer<span class="show-for-sr"> blog entries</span></em>&nbsp;&raquo;</a>
+          <a href="{{ .Paginator.Prev.URL }}"> Posts <em>recentes<span class="show-for-sr"></span></em>&nbsp;&raquo;</a>
         </li>
       {{ end }}
     </ul>
